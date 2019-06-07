@@ -16,15 +16,10 @@ export const coreFields = [
       { value: 'tea', text: 'Tea' },
     ]
   },
-  {
-    name: 'serve',
-    type: 'submit',
-    text: 'Serve',
-  },
 ];
 
 export const initialCoreValues = {
-  employeeName: 'Anonymous',
+  employeeName: 'You',
   drink: 'water',
 };
 
@@ -41,7 +36,7 @@ export const hotDrinkFields = [
   },
 ];
 
-export const softDrinkFields = [
+export const coldDrinkFields = [
   {
     name: 'ice',
     label: 'Ice?',
@@ -54,10 +49,17 @@ export const softDrinkFields = [
   },
 ];
 
-export const initialDrinkOptionValues = {
-  sugar: 0,
-  milk: 0,
-  ice: false,
-  slice: false,
-};
+export const submitFields = [
+  {
+    name: 'serve',
+    type: 'submit',
+    text: 'Serve' },
+];
+
+// export const initialValues = {
+//   sugar: 0,
+//   milk: 0,
+//   ice: false,
+//   slice: false,
+// };
 
