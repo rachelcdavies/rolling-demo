@@ -1,22 +1,18 @@
 import React from 'react';
 
 export  const mappings = {
-  string: ({name, label}) => (
-    <label className="App-label">
-      {label}
-      <input name={name} className="App-string-field" />
+  string: ({name, label, key, onChange, onBlur, ...additionalProps}) => (
+    <label className="App-label">{label}
+    <input name={name} key={key} onChange={onChange} onBlur={onBlur} {...additionalProps} className="App-string-field" />
     </label>),
-  boolean: ({ name, label }) =>
+  boolean: ({ name, label, key }) =>
     (<label className="App-label">
       {label}
-      <input name={name} type="checkbox" />
+      <input name={name} key={key} type="checkbox" />
     </label>),
-  number: ({ name, label }) =>
+  number: ({ name, label, key }) =>
     (<label className="App-label">
       {label}
-      <input name={name} type="number" />
+      <input name={name} key={key} type="number" />
     </label>),
-  submit: ({ name, text }) =>
-    (<button className="App-submit" type="submit" >{text}</button>),
-
 };
