@@ -1,0 +1,22 @@
+.Form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.Form__label {
+  color: deeppink;
+  font-size: calc(8px + 1vmin);
+}
+
+.Form__string-field {
+  background-color: white;
+}
+
+.Form__submit {
+  background-color: gainsboro;
+  border-radius: 4px;
+}
+
+

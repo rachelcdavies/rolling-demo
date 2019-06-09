@@ -1,0 +1,17 @@
+.App {
+  background-color: #282c34;
+  min-height: 100vh;
+  color: white;
+  font-size: calc(10px + 2vmin);
+  text-align: center;
+}
+
+.App-header {
+  color: deeppink;
+  min-height: 10vh;
+}
+
+.App-link {
+  color: cyan;
+  text-decoration: none;
+}
