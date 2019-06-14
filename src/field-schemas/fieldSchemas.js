@@ -19,7 +19,7 @@ export const coreFields = [
 ];
 
 export const initialCoreValues = {
-  employeeName: 'You',
+  employeeName: 'you',
   drink: 'water',
 };
 
