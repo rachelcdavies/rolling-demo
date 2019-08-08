@@ -1,6 +1,6 @@
 import React from 'react';
 import './styles/App.css';
-import SimpleForm from './SimpleForm';
+import { SimpleForm } from './SimpleForm';
 
 
 function App() {
