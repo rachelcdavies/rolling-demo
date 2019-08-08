@@ -9,7 +9,8 @@ export const coreFields = [
   },
   { name: 'drink',
     label: 'Drink',
-    type: 'select', options: [
+    type: 'select',
+    options: [
       { value: 'water', text: 'Water' },
       { value: 'soda', text: 'Soda' },
       { value: 'coffee', text: 'Coffee' },
