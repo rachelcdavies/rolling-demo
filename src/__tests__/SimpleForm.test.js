@@ -23,7 +23,7 @@ describe('Simple Form', () => {
       ReactDOM.render(<SimpleForm />, container);
     });
     const responseMessage = (container.querySelector('p'));
-    expect(responseMessage.textContent).toBe('No drink selected');
+    expect(responseMessage.textContent).toBe('Make a drink selection');
   });
   it('submit with default input', () => {
     act(() => {

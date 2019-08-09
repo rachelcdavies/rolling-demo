@@ -2,10 +2,11 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  align-items: center;
+  align-items: flex-start;
 }
 .simple-form-container {
-
+  position: absolute;
+  left: 25%;
 }
 
 .simple-form__label {
@@ -21,5 +22,34 @@
 .simple-form__string-field {
   background-color: white;
   margin-left: 4px;
+}
+
+.simple-form-message--play {
+  box-shadow: 0px 0px 10px 0px deeppink;
+  animation-name: slideInFromRight;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-play-state: running;
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(150%);
+  }
+  50%{
+    transform: translateX(-8%);
+  }
+  65%{
+    transform: translateX(4%);
+  }
+  80%{
+    transform: translateX(-4%);
+  }
+  95%{
+    transform: translateX(2%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
 }
 

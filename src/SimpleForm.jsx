@@ -8,9 +8,21 @@ import { coreFields, hotDrinkFields, coldDrinkFields, submitFields, initialCoreV
 import useForm from './useFormHook';
 
 export const SimpleForm = () => {
-  const [ message, setMessage ] = useState('No drink selected');
+  const initialMessage = 'Make a drink selection';
+
+  const [ message, setMessage ] = useState(initialMessage);
+
+  const animateMessage = () => {
+    let element = document.getElementById("deliveryMessage");
+    element.classList.remove("simple-form-message--play");
+    void element.offsetWidth;
+    element.classList.add("simple-form-message--play", false);
+  };
+
   const submitAction = () => {
     setMessage(`Preparing ${inputs['drink']} for ${inputs['employeeName']}`);
+    animateMessage();
+  //  TODO clear form
   };
   const {inputs, handleInputChange, handleSubmit} = useForm(initialCoreValues, submitAction);
   const isHot = Boolean(inputs['drink'] === 'tea' || inputs['drink'] === 'coffee');
@@ -24,7 +36,7 @@ export const SimpleForm = () => {
         { isCold ? <DynamicFieldBuilder fields={coldDrinkFields} mappings={mappings} /> : <Fragment /> }
         <DynamicFieldBuilder fields={submitFields} mappings={mappings} />
       </form>
-      <p>{message}</p>
+      <p id="deliveryMessage">{message}</p>
     </div>
   );
 };
