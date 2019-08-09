@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { act } from 'react-dom/test-utils';
 
-import SimpleForm from '../SimpleForm';
+import { SimpleForm } from '../SimpleForm';
 
 let container;
 
