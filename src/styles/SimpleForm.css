@@ -11,15 +11,15 @@
 .simple-form__label {
   color: deeppink;
   font-size: calc(8px + 1vmin);
+  padding: 4px;
+}
+
+.simple-form__input {
+  margin-left: 4px;
 }
 
 .simple-form__string-field {
   background-color: white;
+  margin-left: 4px;
 }
-
-.simple-form__submit {
-  background-color: gainsboro;
-  border-radius: 4px;
-}
-
 

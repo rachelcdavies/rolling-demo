@@ -49,7 +49,7 @@ export const coldDrinkFields = [
     type: 'number',
     min: 0,
     max: 10,
-    step: 2,
+    step: 1,
   },
   {
     name: 'lemon',
@@ -62,5 +62,6 @@ export const submitFields = [
   {
     name: 'serve',
     type: 'submit',
-    text: 'Serve' },
+    text: 'Serve',
+  },
 ];
