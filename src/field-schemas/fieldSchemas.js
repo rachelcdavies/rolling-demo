@@ -28,12 +28,17 @@ export const hotDrinkFields = [
   {
     name: 'sugar',
     label: 'Sugar?',
-    type: 'number'
+    type: 'number',
+    min: 0,
+    max: 5,
+    step: 0.5,
   },
   {
     name: 'milk',
     label: 'Milk?',
-    type: 'number'
+    type: 'range',
+    min: 0,
+    max: 5,
   },
 ];
 
@@ -41,7 +46,10 @@ export const coldDrinkFields = [
   {
     name: 'ice',
     label: 'Ice?',
-    type: 'boolean'
+    type: 'number',
+    min: 0,
+    max: 10,
+    step: 2,
   },
   {
     name: 'lemon',
@@ -56,11 +64,3 @@ export const submitFields = [
     type: 'submit',
     text: 'Serve' },
 ];
-
-// export const initialValues = {
-//   sugar: 0,
-//   milk: 0,
-//   ice: false,
-//   slice: false,
-// };
-
