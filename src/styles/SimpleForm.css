@@ -1,20 +1,23 @@
-.Form {
+.simple-form {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
 }
+.simple-form-container {
 
-.Form__label {
+}
+
+.simple-form__label {
   color: deeppink;
   font-size: calc(8px + 1vmin);
 }
 
-.Form__string-field {
+.simple-form__string-field {
   background-color: white;
 }
 
-.Form__submit {
+.simple-form__submit {
   background-color: gainsboro;
   border-radius: 4px;
 }
