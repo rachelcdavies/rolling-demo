@@ -1,4 +1,4 @@
-This project provides a tiny demo of how you can build a dynamic form using [rolling-fields](https://github.com/tes/rolling-fields).
+This project provides a tiny demo of how you can build a dynamic form using [rolling-fields](https://github.com/tes/rolling-fields). To find out more about the benefits of using rolling-fields, check out this [Rolling Your Own Dynamic Forms](https://engineering.tes.com/post/rolling-fields/) blog post.
 
 These screenshots give the basic idea. The initial form looks like:
 
